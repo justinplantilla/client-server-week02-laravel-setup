@@ -125,13 +125,6 @@ Edit `resources/views/welcome.blade.php` to display student information.
 ![Student Info Homepage](screenshots/part9%20student%20info.png)
 *Screenshot: Customized Laravel homepage displaying student information.*
 
-### Step 10 – Run the Development Server
-```bash
-php artisan serve
-```
-![Artisan Serve](screenshots/part8%20artisan%20serve.png)
-*Screenshot: Running the Laravel development server.*
-
 ### Step 10 – Push to GitHub
 ```bash
 git init
@@ -261,7 +254,7 @@ Setting up a Laravel development environment from scratch was both a challenging
 
 One of the most important things I learned is how a PHP framework like Laravel abstracts away much of the repetitive work involved in web development. Instead of writing raw PHP for every route, database query, or HTML template, Laravel provides a clean and organized structure that makes development faster and more maintainable. The MVC pattern, in particular, helped me understand how to separate concerns — keeping the business logic, data handling, and presentation in distinct layers of the application.
 
-The challenges I encountered during this activity were also valuable learning experiences. The SQLite driver error taught me how PHP extensions work and how to configure `php.ini` to enable or disable specific features. The Git PATH issue reminded me that software installation on Windows often requires manual environment variable configuration, which is a common real-world task for developers. The GitHub authentication problem introduced me to Personal Access Tokens, which are a more secure alternative to password-based authentication and are now the industry standard for Git operations over HTTPS.
+The challenges I encountered during this activity were also valuable learning experiences. The MySQL connection error taught me how to properly configure the `.env` file and start the MySQL service using MySQL Workbench. The Git PATH issue reminded me that software installation on Windows often requires manual environment variable configuration, which is a common real-world task for developers. The GitHub authentication problem introduced me to Personal Access Tokens, which are a more secure alternative to password-based authentication and are now the industry standard for Git operations over HTTPS.
 
 Laravel is particularly important in client-server development because it provides a robust server-side framework that handles everything from routing and middleware to database migrations and session management. In a client-server architecture, the server must reliably process requests, interact with the database, and return well-structured responses. Laravel's built-in tools make all of this straightforward, allowing developers to focus on building features rather than reinventing the wheel.
 
