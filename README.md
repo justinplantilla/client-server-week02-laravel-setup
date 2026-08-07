@@ -83,12 +83,13 @@ composer create-project laravel/laravel hello-laravel
 *Screenshot: Installing Laravel project via Composer.*
 
 ### Step 4 – Verify Laravel Version
+After the installation is complete, navigate into the project folder and verify the Laravel version:
 ```bash
 cd hello-laravel
 php artisan --version
 ```
 ![Laravel Version](screenshots/part3%20verify%20laravel.png)
-*Screenshot: Verifying Laravel version using Artisan.*
+*Screenshot: Verifying Laravel version inside the project folder using Artisan.*
 
 ### Step 5 – Verify Git Installation
 ```bash
