@@ -145,8 +145,8 @@ php artisan serve
 ![Artisan Serve](screenshots/part8%20artisan%20serve.png)
 *Screenshot: Running the Laravel development server.*
 
-### Step 11 – View Customized Homepage
-Open your browser and go to `http://127.0.0.1:8000`
+### Step 11 – Customize the Homepage
+Edit `resources/views/welcome.blade.php` to display student information.
 
 ![Student Info Homepage](screenshots/part9%20student%20info.png)
 *Screenshot: Customized Laravel homepage displaying student information.*
@@ -269,7 +269,7 @@ git remote set-url origin https://justinplantilla:<token>@github.com/justinplant
 | 7 | ![](screenshots/part6%20install%20vscode.png) | VS Code editor installed and configured |
 | 8 | ![](screenshots/part%207%20laravel%20project.png) | Laravel project folder structure in VS Code |
 | 9 | ![](screenshots/part8%20artisan%20serve.png) | Running the Laravel development server with `php artisan serve` |
-| 10 | ![](screenshots/part9%20student%20info.png) | Customized homepage displaying student information and current date |
+| 10 | ![](screenshots/part9%20student%20info.png) | Customized homepage by editing `welcome.blade.php` to display student information |
 | 11 | ![](screenshots/part10%20push%20to%20github%20repo.png) | Successfully pushing the project to the GitHub repository |
 
 ---
