@@ -4,10 +4,10 @@
 | Field | Details |
 |---|---|
 | **Name** | Justin Plantilla |
-| **Student No.** | 2023-12345 |
+| **Student No.** | 0124-0616 |
 | **Course** | Bachelor of Science in Information Technology |
-| **Section** | BSIT 3-A |
-| **Subject** | Web Systems and Technologies |
+| **Section** | BSIT 3-D |
+| **Subject** | Client-Server Technologies |
 
 ---
 
