@@ -112,12 +112,14 @@ code .
 ![VS Code](screenshots/part6%20install%20vscode.png)
 *Screenshot: Laravel project opened in VS Code.*
 
-### Step 8 – Open Laravel Project
+### Step 8 – Run Laravel
 ```bash
-cd hello-laravel
+php artisan serve
 ```
-![Laravel Project](screenshots/part%207%20laravel%20project.png)
-*Screenshot: Laravel project folder structure in VS Code.*
+Open your browser and go to `http://127.0.0.1:8000`
+
+![Artisan Serve](screenshots/part8%20artisan%20serve.png)
+*Screenshot: Running the Laravel development server.*
 
 ### Step 9 – Customize the Homepage
 Edit `resources/views/welcome.blade.php` to display student information.
@@ -241,10 +243,9 @@ git remote set-url origin https://justinplantilla:<token>@github.com/justinplant
 | 5 | ![](screenshots/part4%20git%20version.png) | Verifying Git installation and version |
 | 6 | ![](screenshots/part5%20mysql%20version.png) | Verifying MySQL installation and version |
 | 7 | ![](screenshots/part6%20install%20vscode.png) | VS Code editor installed and configured |
-| 8 | ![](screenshots/part%207%20laravel%20project.png) | Laravel project folder structure in VS Code |
-| 9 | ![](screenshots/part8%20artisan%20serve.png) | Running the Laravel development server with `php artisan serve` |
-| 10 | ![](screenshots/part9%20student%20info.png) | Customized homepage by editing `welcome.blade.php` to display student information |
-| 11 | ![](screenshots/part10%20push%20to%20github%20repo.png) | Successfully pushing the project to the GitHub repository |
+| 8 | ![](screenshots/part8%20artisan%20serve.png) | Running the Laravel development server with `php artisan serve` |
+| 9 | ![](screenshots/part9%20student%20info.png) | Customized homepage by editing `welcome.blade.php` to display student information |
+| 10 | ![](screenshots/part10%20push%20to%20github%20repo.png) | Successfully pushing the project to the GitHub repository |
 
 ---
 
