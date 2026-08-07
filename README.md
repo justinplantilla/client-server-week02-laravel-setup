@@ -132,7 +132,7 @@ php artisan serve
 ![Artisan Serve](screenshots/part8%20artisan%20serve.png)
 *Screenshot: Running the Laravel development server.*
 
-### Step 11 – Push to GitHub
+### Step 10 – Push to GitHub
 ```bash
 git init
 git add .
