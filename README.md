@@ -119,24 +119,11 @@ cd hello-laravel
 ![Laravel Project](screenshots/part%207%20laravel%20project.png)
 *Screenshot: Laravel project folder structure in VS Code.*
 
-### Step 9 – Configure Environment and Run Migrations
-```bash
-cp .env.example .env
-php artisan key:generate
-```
-Open `.env` and update the database settings to use MySQL:
-```ini
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=root
-DB_PASSWORD=
-```
-Then run migrations:
-```bash
-php artisan migrate
-```
+### Step 9 – Customize the Homepage
+Edit `resources/views/welcome.blade.php` to display student information.
+
+![Student Info Homepage](screenshots/part9%20student%20info.png)
+*Screenshot: Customized Laravel homepage displaying student information.*
 
 ### Step 10 – Run the Development Server
 ```bash
@@ -145,13 +132,7 @@ php artisan serve
 ![Artisan Serve](screenshots/part8%20artisan%20serve.png)
 *Screenshot: Running the Laravel development server.*
 
-### Step 11 – Customize the Homepage
-Edit `resources/views/welcome.blade.php` to display student information.
-
-![Student Info Homepage](screenshots/part9%20student%20info.png)
-*Screenshot: Customized Laravel homepage displaying student information.*
-
-### Step 12 – Push to GitHub
+### Step 11 – Push to GitHub
 ```bash
 git init
 git add .
