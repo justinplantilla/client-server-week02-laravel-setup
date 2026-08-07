@@ -37,7 +37,7 @@ The following objectives were achieved during this activity:
 1. **Set up the development environment** by installing PHP, Composer, Git, MySQL, and VS Code on a Windows machine.
 2. **Create a new Laravel project** using Composer and verify that the application runs correctly via `php artisan serve`.
 3. **Customize the Laravel homepage** to display student information including name, student number, course, section, subject, and current date.
-4. **Configure the SQLite database** by enabling the `pdo_sqlite` and `sqlite3` extensions in `php.ini` and running database migrations.
+4. **Configure the MySQL database** by setting up MySQL Workbench, creating a local database, and connecting it to the Laravel project via the `.env` file and running database migrations.
 5. **Initialize a Git repository** and push the complete Laravel project to a public GitHub repository with a minimum of five meaningful commits following professional commit message conventions.
 
 ---
@@ -122,6 +122,18 @@ cd hello-laravel
 ```bash
 cp .env.example .env
 php artisan key:generate
+```
+Open `.env` and update the database settings to use MySQL:
+```ini
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
+Then run migrations:
+```bash
 php artisan migrate
 ```
 
@@ -198,13 +210,13 @@ client-server-week02-laravel-setup/
 
 During the setup of this Laravel project, the following challenges were encountered:
 
-### Problem 1 – SQLite Driver Not Found
+### Problem 1 – MySQL Connection Refused
 When running the application for the first time, the following error appeared:
 ```
 Illuminate\Database\QueryException: could not find driver
-(Connection: sqlite, Database: database/database.sqlite)
+(Connection: mysql, Database: laravel)
 ```
-This occurred because the `pdo_sqlite` and `sqlite3` PHP extensions were disabled in `php.ini`.
+This occurred because the MySQL service was not running and the `.env` file was not properly configured with the correct database credentials.
 
 ### Problem 2 – Git Not Recognized in Terminal
 When attempting to run `git` commands in the terminal, the error `'git' is not recognized as an internal or external command` appeared. Git was installed but its executable path was not added to the Windows system PATH environment variable.
@@ -216,11 +228,15 @@ When pushing to GitHub using `git push`, the terminal prompted for a username an
 
 ## 8. Solutions
 
-### Solution 1 – Enable SQLite Extensions
-Opened `C:\php\php.ini` and removed the semicolons (`;`) from the following lines to enable the extensions:
+### Solution 1 – Configure MySQL via .env and MySQL Workbench
+Opened MySQL Workbench and started the local MySQL server instance. Created a new database named `laravel`, then updated the `.env` file with the correct credentials:
 ```ini
-extension=pdo_sqlite
-extension=sqlite3
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
 ```
 After saving the file, ran `php artisan migrate` to create the required database tables.
 
