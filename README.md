@@ -239,7 +239,7 @@ git remote set-url origin https://justinplantilla:<token>@github.com/justinplant
 | 1 | ![](screenshots/part1%20verify%20php.png) | Verifying PHP installation and version in the terminal |
 | 2 | ![](screenshots/part2%20verify%20composer.png) | Verifying Composer installation and version |
 | 3 | ![](screenshots/part%203%20instal%20via%20composer.png) | Installing Laravel project via Composer |
-| 4 | ![](screenshots/part3%20verify%20laravel.png) | Verifying Laravel version using `php artisan --version` |
+| 4 | ![](screenshots/part3%20verify%20laravel.png) | Verifying Laravel version using `php -v` |
 | 5 | ![](screenshots/part4%20git%20version.png) | Verifying Git installation and version |
 | 6 | ![](screenshots/part5%20mysql%20version.png) | Verifying MySQL installation and version |
 | 7 | ![](screenshots/part6%20install%20vscode.png) | VS Code editor installed and configured |
